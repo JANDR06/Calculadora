@@ -176,6 +176,18 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/buttonClear"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="AC"
+                android:textSize="23sp" />
+
+            <Button
                 android:id="@+id/buttonSplit"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="match_parent"
@@ -232,32 +244,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="13dp"
-        android:layout_marginBottom="60dp"
         android:text="0"
         android:textAlignment="textEnd"
         android:textColor="#000000"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonClear"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/buttonClear"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="181dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="170dp"
-        android:layout_marginEnd="6dp"
-        android:onClick="onClick"
-        android:text="CLEAR"
-        android:textSize="23sp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.968"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939" />
 
     <CheckBox
         android:id="@+id/checkBox"
